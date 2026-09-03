@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bootstrap Page</title>
+
+<!-- Bootstrap CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Custom Stylesheet -->
+<link href="style2.css" rel="stylesheet">
+
+<!-- Bootstrap JS Bundle -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+
+<!-- Header + Navbar Container -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom px-3">
+  <!-- Mobile: Row layout | Desktop: Column layout -->
+  <div class="container-fluid d-flex flex-row flex-lg-column align-items-stretch p-0">
+    
+    <!-- TOP ROW: Logo + Mobile Toggle Button -->
+    <div class="d-flex align-items-center justify-content-between w-100">
+      <a href="#" class="navbar-brand me-0">
+        <img src="/assets/UE-Logo.png" alt="UE Logo Header" class="header-banner-img">
+      </a>
+
+      <!-- Mobile Hamburger Button -->
+      <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </div>
+
+    <!-- BOTTOM ROW: Navigation Links -->
+    <div class="collapse navbar-collapse w-100 mt-2 mt-lg-3 border-top-lg" id="navbarCollapse">
+      <div class="navbar-nav me-auto pt-2 pt-lg-0">
+        <a href="#" class="nav-item nav-link active">Home</a>
+        <a href="#" class="nav-item nav-link">About</a>
+        <a href="#" class="nav-item nav-link">Admissions</a>
+        <a href="#" class="nav-item nav-link">School Calendar</a>
+        <a href="#" class="nav-item nav-link">Academics</a>
+        <a href="#" class="nav-item nav-link">Student Services</a>
+        <a href="#" class="nav-item nav-link">Libraries</a>
+        <a href="#" class="nav-item nav-link disabled" tabindex="-1" aria-disabled="true">Alumni</a>
+      </div>
+      <div class="navbar-nav ms-auto">
+        <a href="#" class="nav-item nav-link">Login</a>
+      </div>
+    </div>
+
+  </div>
+</nav>
+
+<!-- Carousel Section -->
+<div class="container-lg my-3">
+    <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+        <!-- Carousel indicators -->
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+        </div>
+        
+        <!-- Wrapper for carousel items -->
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="/assets/eng-top-2026.jpg" class="d-block w-100" alt="Slide 1">
+            </div>
+            <div class="carousel-item">
+                <img src="/assets/law-refresher-course.jpg" class="d-block w-100" alt="Slide 2">
+            </div>
+            <div class="carousel-item">
+                <img src="/assets/sch-calendar-2026.gif" class="d-block w-100" alt="Slide 3">
+            </div>
+            <div class="carousel-item">
+                <img src="/assets/no-tfi-2026.jpg" class="d-block w-100" alt="Slide 4">
+            </div>
+        </div>
+
+        <!-- Custom Circular Carousel Controls -->
+        <button class="carousel-control-prev custom-carousel-btn" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+            <span class="btn-circle">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            </span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next custom-carousel-btn" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+            <span class="btn-circle">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            </span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+</div>
+
+<!-- News & Announcements Header -->
+<div class="container-lg mt-3 mt-md-4 mb-3">
+    <div class="border-start border-4 border-danger ps-3">
+        <h2 class="h3 fw-bold mb-0 text-dark">University News and Announcements</h2>
+    </div>
+</div>
+
+<!-- Responsive Cards Container -->
+<div class="container-lg mb-5">
+    <!-- 1 col on mobile (<576px), 2 cols on tablet (≥576px), 4 cols on desktop (≥992px) -->
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-4 g-4">
+        
+        <!-- Card Item 1 -->
+        <div class="col">
+            <div class="card h-100 shadow-sm">
+                <img src="/assets/engr_topnotcher.jpg" class="card-img-top" alt="Mechanical Engineering Topnotcher Announcement">
+                <div class="card-body d-flex flex-column">
+                    
+                    <h5 class="card-title text-center fw-bold mb-3">
+                        TOPNOTCHER ALERT!
+                    </h5>
+                    
+                    <p class="card-text">
+                        The UE College of Engineering - Manila proudly congratulates 𝗘𝗡𝗚𝗥. 𝗔𝗗𝗥𝗜𝗔𝗡 𝗩𝗜𝗡𝗖𝗘𝗡𝗧 𝗦𝗢𝗡𝗘𝗥, our February 2026 BS Mechanical Engineering graduate, for placing 𝟵𝘁𝗵 in the August 2026 Mechanical Engineer Licensure with an outstanding 𝟴𝟵.𝟬𝟱% rating.
+                    </p>
+
+                    <div class="my-2 small">
+                        <p class="mb-1">The College also celebrates the commendable performance of our Mechanical Engineering graduates:</p>
+                        <p class="mb-1">⚙️ 𝗙𝗶𝗿𝘀𝘁-𝗧𝗶𝗺𝗲 𝗧𝗮𝗸𝗲𝗿𝘀: 𝟳𝟮.𝟳𝟯%</p>
+                        <p class="mb-1">⚙️ 𝗢𝘃𝗲𝗿𝗮𝗹𝗹 𝗣𝗮𝘀𝘀𝗶𝗻𝗴 𝗥𝗮𝘁𝗲: 𝟲𝟲.𝟲𝟳%</p>
+                        <p class="mb-1">🇵🇭 𝗡𝗮𝘁𝗶𝗼𝗻𝗮𝗹 𝗣𝗮𝘀𝘀𝗶𝗻𝗴 𝗥𝗮𝘁𝗲: 𝟯𝟲.𝟵𝟱%</p>
+                    </div>
+
+                    <p class="card-text text-muted small mt-2 mt-auto">
+                        #PadayonInhinyero #SaUEKaNa
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card Item 2 -->
+        <div class="col">
+            <div class="card h-100 shadow-sm">
+                <img src="/assets/pathfit_unif.jpg" class="card-img-top" alt="PATHFIT Uniform Selling Advisory">
+                <div class="card-body d-flex flex-column">
+                    
+                    <h5 class="card-title text-center fw-bold mb-3">
+                        ADVISORY: Last Day of PATHFIT Uniform Selling
+                    </h5>
+                    
+                    <p class="card-text">
+                        Last day of the selling of PATHFIT uniforms for both Manila and Caloocan Campuses will be on <strong>Thursday, August 27, 2026</strong>.
+                    </p>
+
+                    <div class="my-2 small">
+                        <p class="mb-1"><strong>UE Manila:</strong> Gym 3 Entrance Gate, PE Building</p>
+                        <p class="mb-1"><strong>UE Caloocan:</strong> Gym Entrance</p>
+                    </div>
+
+                    <p class="card-text text-muted small mt-2 mt-auto">
+                        #UniversityOfTheEast #LetYourTomorrowBeginInTheEast #SaUEKaNa
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card Item 3 -->
+        <div class="col">
+            <div class="card h-100 shadow-sm">
+                <img src="/assets/ue_vs_ust.jpg" class="card-img-top" alt="UE vs UST Esports Match Result">
+                <div class="card-body d-flex flex-column">
+                    
+                    <h5 class="card-title text-center fw-bold mb-3">
+                        WARRIORS HOLD THEIR GROUND!
+                    </h5>
+                    
+                    <p class="card-text">
+                        The UE Red Warriors and UST finish their series at 1-1, with both squads claiming a point in the standings.
+                    </p>
+
+                    <div class="my-2 small">
+                        <p class="mb-1">A competitive showdown that kept the pressure on from the opening map to the final play. Hats off to our Warriors for showing up, battling through, and leaving it all on the board!</p>
+                    </div>
+
+                    <p class="card-text text-muted small mt-2 mt-auto">
+                        #UEEsports #UAAPEsports #LetYourTomorrowBeginInTheEast #SaUEKaNa
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card Item 4 -->
+        <div class="col">
+            <div class="card h-100 shadow-sm">
+                <img src="/assets/35days.jpg" class="card-img-top" alt="35 DAYS">
+                <div class="card-body d-flex flex-column">
+                    
+                    <h5 class="card-title text-center fw-bold mb-3">
+                        35 DAYS TO GO!
+                    </h5>
+                    
+                    <p class="card-text">
+                        Only 35 days until we reunite with old friends, relive wonderful memories, and create new ones at the UE Grand Alumni Reunion!
+                    </p>
+
+                    <div class="my-2 small">
+                        <p class="mb-1">The excitement is building. See you on September 26! Register now and secure your seat! Don't miss this special opportunity to reconnect with fellow alumni and celebrate the legacy we proudly share.</p>
+                    </div>
+
+                    <div class="my-2 small">
+                        <p class="mb-1">To register, kindly click the link: 🔗 uealumni.org</p>
+                    </div>
+
+                    <p class="card-text text-muted small mt-2 mt-auto">
+                        #UEAlumniReunion #UELegacies #RedWarriorForever #WhereLegaciesAreBornAndMade #TheManilaHotel #ProudToBeUE #RegisterNow
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card Item 5 -->
+        <div class="col">
+            <div class="card h-100 shadow-sm">
+                <img src="/assets/rhiana_cruz.jpg" class="card-img-top" alt="RHIANA">
+                <div class="card-body d-flex flex-column">
+                    
+                    <h5 class="card-title text-center fw-bold mb-3">
+                        CONGRATULATIONS, RHIANA BRIDGETTE CRUZ!
+                    </h5>
+                    
+                    <p class="card-text">
+                        The University of the East proudly congratulates 𝗥𝗵𝗶𝗮𝗻𝗮 𝗕𝗿𝗶𝗱𝗴𝗲𝘁𝘁𝗲 𝗖𝗿𝘂𝘇, 𝗮 𝗚𝗿𝗮𝗱𝗲 𝟵 𝘀𝘁𝘂𝗱𝗲𝗻𝘁 𝗼𝗳 𝗨𝗘 𝗠𝗮𝗻𝗶𝗹𝗮, for her outstanding performance at the 𝟮𝟬𝟮𝟲 𝗦𝗼𝘂𝘁𝗵𝗲𝗮𝘀𝘁 𝗔𝘀𝗶𝗮𝗻 𝗙𝗲𝗻𝗰𝗶𝗻𝗴 𝗙𝗲𝗱𝗲𝗿𝗮𝘁𝗶𝗼𝗻 (𝗦𝗘𝗔𝗙𝗙) 𝗝𝘂𝗻𝗶𝗼𝗿 & 𝗖𝗮𝗱𝗲𝘁 𝗖𝗵𝗮𝗺𝗽𝗶𝗼𝗻𝘀𝗵𝗶𝗽 𝗶𝗻 𝗞𝘂𝗮𝗹𝗮 𝗟𝘂𝗺𝗽𝘂𝗿, 𝗠𝗮𝗹𝗮𝘆𝘀𝗶𝗮!
+                    </p>
+
+                    <div class="my-2 small">
+                        <p class="mb-1">Rhiana proudly represented the Philippines in:</p>
+                    </div>
+
+                    <div class="my-2 small">
+                        <p class="mb-1">🥉 Cadet U21 Women’s Epee Team</p>
+                    </div>
+
+                    <div class="my-2 small">
+                        <p class="mb-1">Your hard work, discipline, and determination continue to make UE proud and bring honor to the Philippines.</p>
+                    </div>
+
+                    <div class="my-2 small">
+                        <p class="mb-1">Congratulations, Rhiana! Keep making the Red Warriors proud!</p>
+                    </div>
+
+                    <p class="card-text text-muted small mt-2 mt-auto">
+                        #UEFencing #SEAFF2026 #LetYourTomorrowBeginintheEast #SaUEKaNa
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card Item 6 -->
+        <div class="col">
+            <div class="card h-100 shadow-sm">
+                <img src="/assets/christine.jpg" class="card-img-top" alt="CHRISTINE">
+                <div class="card-body d-flex flex-column">
+                    
+                    <h5 class="card-title text-center fw-bold mb-3">
+                        CONGRATULATIONS, CHRISTINE MAY MORALES!
+                    </h5>
+                    
+                    <p class="card-text">
+                        The University of the East proudly congratulates 𝗖𝗵𝗿𝗶𝘀𝘁𝗶𝗻𝗲 𝗠𝗮𝘆 𝗠𝗼𝗿𝗮𝗹𝗲𝘀, 𝗮 𝗚𝗿𝗮𝗱𝗲 𝟴 𝘀𝘁𝘂𝗱𝗲𝗻𝘁 𝗼𝗳 𝗨𝗘 𝗠𝗮𝗻𝗶𝗹𝗮, for her outstanding performance at the 𝟮𝟬𝟮𝟲 𝗦𝗼𝘂𝘁𝗵𝗲𝗮𝘀𝘁 𝗔𝘀𝗶𝗮𝗻 𝗙𝗲𝗻𝗰𝗶𝗻𝗴 𝗙𝗲𝗱𝗲𝗿𝗮𝘁𝗶𝗼𝗻 (𝗦𝗘𝗔𝗙𝗙) 𝗝𝘂𝗻𝗶𝗼𝗿 & 𝗖𝗮𝗱𝗲𝘁 𝗖𝗵𝗮𝗺𝗽𝗶𝗼𝗻𝘀𝗵𝗶𝗽 𝗶𝗻 𝗞𝘂𝗮𝗹𝗮 𝗟𝘂𝗺𝗽𝘂𝗿, 𝗠𝗮𝗹𝗮𝘆𝘀𝗶𝗮!
+                    </p>
+
+                    <div class="my-2 small">
+                        <p class="mb-1">Christine proudly represented the Philippines in:</p>
+                    </div>
+
+                    <div class="my-2 small">
+                        <p class="mb-1">🥇 Under 14 Girls’ Foil Individual |🥈 Cadet Women's Foil Team</p>
+                    </div>
+
+                    <div class="my-2 small">
+                        <p class="mb-1">Your hard work, discipline, and determination continue to make UE proud and bring honor to the Philippines.</p>
+                    </div>
+
+                    <div class="my-2 small">
+                        <p class="mb-1">Congratulations, Christine! Keep making the Red Warriors proud!</p>
+                    </div>
+
+                    <p class="card-text text-muted small mt-2 mt-auto">
+                        #UEFencing #SEAFF2026 #LetYourTomorrowBeginintheEast #SaUEKaNa
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card Item 7 -->
+        <div class="col">
+            <div class="card h-100 shadow-sm">
+                <img src="/assets/ue_it_27.jpg" class="card-img-top" alt="suspended">
+                <div class="card-body d-flex flex-column">
+                    
+                    <h5 class="card-title text-center fw-bold mb-3">
+                        𝗔𝗗𝗩𝗜𝗦𝗢𝗥𝗬 | 𝗨𝗘 𝗠𝗔𝗡𝗜𝗟𝗔 𝗔𝗡𝗗 𝗖𝗔𝗟𝗢𝗢𝗖𝗔𝗡
+                    </h5>
+                    
+                    <p class="card-text">
+                        In view of the weather-related suspension of face-to-face classes announced by the Manila and Caloocan City Governments, as well as the scheduled power system maintenance affecting both campuses, classes at all levels tomorrow, Friday, August 28, 2026, shall shift to the following modalities:
+                    </p>
+
+                    <div class="my-2 small">
+                        <p class="mb-1">• Manila - Online synchronous</p>
+                    </div>
+
+                    <div class="my-2 small">
+                        <p class="mb-1">• Caloocan - Asynchronous/p>
+                    </div>
+
+                    <div class="my-2 small">
+                        <p class="mb-1">Students are advised to coordinate with their respective faculty members and check their official class communication channels for class schedules and other instructions.</p>
+                    </div>
+
+                    <div class="my-2 small">
+                        <p class="mb-1">Thank you, and please stay safe, UE Community!</p>
+                    </div>
+
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card Item 7 -->
+        <div class="col">
+            <div class="card h-100 shadow-sm">
+                <img src="/assets/reunion.jpg" class="card-img-top" alt="reunion">
+                <div class="card-body d-flex flex-column">
+                    
+                    <h5 class="card-title text-center fw-bold mb-3">
+                        𝟯𝟬 𝗗𝗔𝗬𝗦 𝗧𝗢 𝗚𝗢!
+                    </h5>
+                    
+                    <p class="card-text">
+                        It’s time to reconnect with old friends, share stories, revisit cherished memories, and celebrate the wonderful UE family that continues to bring us together. 💙
+                    </p>
+
+                    <div class="my-2 small">
+                        <p class="mb-1">Register now and secure your seat! Don't miss this special opportunity to reconnect with fellow alumni and celebrate the legacy we proudly share.</p>
+                    </div>
+
+                    <div class="my-2 small">
+                        <p class="mb-1">Once a Red Warrior, always a Red Warrior.
+                    </div>
+
+                    <div class="my-2 small">
+                        <p class="mb-1">To register, kindly click the link: 🔗 uealumni.org</p>
+                    </div>
+
+                    <div class="my-2 small">
+                        <p class="mb-1">See you there, fellow Warriors!</p>
+                    </div>
+
+                    <div class="my-2 small">
+                        <p class="mb-1">#UEAlumniReunion #UELegacies #RedWarriorForever #WhereLegaciesAreBornAndMade #TheManilaHotel #ProudToBeUE #RegisterNow</p>
+                    </div>
+                    
+                    </p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+</body>
+</html>

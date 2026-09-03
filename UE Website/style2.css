@@ -1,0 +1,86 @@
+/* Header Banner Styling */
+.header-banner-img {
+  max-width: 100%;
+  height: auto;
+  max-height: 70px; /* Mobile size */
+  display: block;
+}
+
+/* Increase logo size on desktop */
+@media (min-width: 992px) {
+  .header-banner-img {
+    max-height: 100px;
+  }
+}
+
+/* Smooth horizontal slide animation on arrow click */
+.carousel-inner .carousel-item {
+  transition: transform 0.6s ease-in-out !important;
+}
+
+/* Fix for smooth sliding across all browsers */
+.carousel-item-next,
+.carousel-item-prev,
+.carousel-item.active {
+  display: block;
+}
+
+/* Prevent nav items from wrapping text vertically */
+.navbar-nav .nav-link {
+  white-space: nowrap;
+}
+
+/* Custom style to prevent carousel distortion */
+@media (min-width: 768px) {
+  .carousel-item {
+    min-height: 280px;
+  }
+}
+
+/* Keep carousel container relative so buttons sit on edges */
+#myCarousel {
+  position: relative;
+}
+
+/* Override default Bootstrap full-height controls */
+.custom-carousel-btn {
+  width: auto;
+  opacity: 1;
+  top: 50%;
+  transform: translateY(-50%);
+  bottom: auto;
+  z-index: 5;
+}
+
+/* Position buttons on outer edges */
+.carousel-control-prev.custom-carousel-btn {
+  left: -20px;
+}
+
+.carousel-control-next.custom-carousel-btn {
+  right: -20px;
+}
+
+/* Dark circular background wrapper for arrows */
+.btn-circle {
+  width: 40px;
+  height: 40px;
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.2s ease;
+}
+
+/* Scale inner arrows to fit inside the circle */
+.btn-circle .carousel-control-prev-icon,
+.btn-circle .carousel-control-next-icon {
+  width: 18px;
+  height: 18px;
+}
+
+/* Darken circle on hover */
+.custom-carousel-btn:hover .btn-circle {
+  background-color: rgba(0, 0, 0, 0.85);
+}
