@@ -1,0 +1,347 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #faf8f5; /* Warm cream background */
+    color: #3d322c;
+    min-height: 100vh;
+}
+
+/* Page Container - Single Column Stack */
+.page-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-height: 100vh;
+}
+
+/* Base Padding for all Sections */
+.div-one, .div-two, .div-three {
+    padding: 28px 24px;
+    word-wrap: break-word;
+}
+
+
+/* =========================================================
+   DIV 1: Header Banner (Dark Espresso)
+   ========================================================= */
+
+.div-one { 
+    background-color: #2c221e;
+    color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    align-items: center; /* Center-aligns text block and photo vertically */
+    justify-content: space-between;
+    text-align: left;
+    gap: 20px; /* Slightly increased gap for breathable spacing */
+}
+
+/* Left Profile Info */
+.profile-info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.greeting-text {
+    font-size: 0.85rem;
+    color: #f59e0b; /* Amber highlight */
+    font-weight: 500;
+    margin-bottom: 2px;
+}
+
+.profile-name {
+    font-size: 2.45rem;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 4px;
+    line-height: 1.2;
+}
+
+.profile-title {
+    font-size: 0.8rem;
+    color: #d6c7b2;
+    line-height: 1.35;
+    margin-bottom: 14px;
+}
+
+/* Right Photo Container - Rounded Square */
+.profile-photo {
+    width: 115px;
+    height: 115px;
+    flex-shrink: 0;
+}
+
+.profile-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 18px; /* Smooth rounded square corners */
+    border: 3px solid #f59e0b;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.4);
+}
+
+/* Social Links Row */
+.social-links {
+    display: flex;
+    justify-content: flex-start;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+.social-links a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    background-color: rgba(255, 255, 255, 0.12);
+    color: #ffffff;
+    border-radius: 50%;
+    font-size: 0.95rem;
+    text-decoration: none;
+    transition: all 0.2s ease;
+}
+
+.social-links a:hover {
+    background-color: #f59e0b;
+    color: #2c221e;
+    transform: translateY(-2px);
+}
+
+
+/* =========================================================
+   DIV 2: Middle Section (Bio & Gallery)
+   ========================================================= */
+
+.div-two { 
+    background-color: #faf8f5;
+}
+
+.div-two h2 {
+    font-size: 1.5rem;
+    color: #2c221e;
+    margin-bottom: 20px;
+    text-align: center;
+    position: relative;
+    padding-bottom: 10px; /* Gives the line some breathing room */
+}
+
+/* Centered Soft Accent Line Under Heading */
+.div-two h2::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;                 /* Slightly longer length */
+    height: 3px;                 /* Clean, sleek thickness */
+    background-color: #b45309;   /* Warm terracotta brown (easier on the eyes) */
+    border-radius: 4px;
+}
+
+.bio-lead {
+    font-size: 0.95rem !important;
+    font-weight: 500;
+    color: #2c221e !important;
+    line-height: 1.5;
+    margin-bottom: 16px;
+}
+
+/* Skill Tags / Badges */
+.bio-highlights {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    margin-bottom: 18px;
+}
+
+.highlight-card {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    background-color: #efebe4;
+    border: 1px solid #e6dfd5;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: #b45309;
+}
+
+.highlight-card i {
+    font-size: 0.8rem;
+}
+
+.bio-section p {
+    font-size: 0.88rem;
+    line-height: 1.6;
+    color: #4a3e37;
+    margin-bottom: 12px;
+}
+
+.maimai-link {
+    color: #b45309;
+    font-weight: 600;
+    text-decoration: none;
+    border-bottom: 1.5px dashed #b45309;
+}
+
+.section-divider {
+    border: none;
+    height: 1px;
+    background-color: #e6dfd5;
+    margin: 24px 0;
+}
+
+/* Gallery Section */
+.gallery-section h3 {
+    font-size: 1.1rem;
+    color: #2c221e;
+    margin-bottom: 14px;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.gallery-item {
+    aspect-ratio: 1 / 1;
+    border-radius: 8px;
+    overflow: hidden;
+    border: 1px solid #e6dfd5;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.gallery-item img:hover {
+    transform: scale(1.05);
+}
+
+
+/* =========================================================
+   DIV 3: Bottom Section (Previous Works - Zigzag Layout)
+   ========================================================= */
+
+.div-three { 
+    background-color: #efebe4;
+    border-top: 1px solid #e6dfd5;
+}
+
+/* Title */
+.div-three h2 {
+    font-size: 1.5rem;
+    color: #2c221e;
+    margin-bottom: 24px;
+    text-align: center;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.div-three h2::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 3px;
+    background-color: #b45309;
+    border-radius: 4px;
+}
+
+/* Works Container */
+.works-container {
+    display: flex;
+    flex-direction: column;
+    gap: 24px; /* Space between work cards */
+}
+
+/* Base Work Item (Flexbox Row) */
+.work-item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+    background-color: #faf8f5;
+    padding: 18px;
+    border-radius: 14px;
+    border: 1px solid #e6dfd5;
+    box-shadow: 0 4px 12px rgba(44, 34, 30, 0.04);
+}
+
+/* Alternating Reverse Item */
+.work-item-reverse {
+    flex-direction: row-reverse;
+}
+
+/* Media/Image Container */
+.work-media {
+    width: 120px;
+    height: 120px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    overflow: hidden;
+    border: 1px solid #e6dfd5;
+}
+
+.work-media img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.work-item:hover .work-media img {
+    transform: scale(1.06);
+}
+
+/* Text Content */
+.work-info {
+    flex: 1;
+}
+
+.work-info h3 {
+    font-size: 1.1rem;
+    color: #2c221e;
+    margin-bottom: 6px;
+}
+
+.work-info p {
+    font-size: 0.85rem;
+    color: #4a3e37;
+    line-height: 1.5;
+    margin-bottom: 0; /* Clean bottom fit without button */
+}
+
+/* Responsive adjustment for small phone screens */
+@media (max-width: 480px) {
+    .work-item, .work-item-reverse {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .work-media {
+        width: 100%;
+        height: 140px;
+    }
+}
+
+.div-three h2 {
+    font-size: 1.3rem;
+    color: #881337;
+    margin-bottom: 12px;
+}
